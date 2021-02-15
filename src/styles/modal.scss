@@ -1,0 +1,53 @@
+#modal-wrapper {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background: rgba($color: $black, $alpha: 0.8);
+    transition: all 0.25s ease-in-out;
+
+    @media (max-width: 540px) {
+        font-size: 20px;
+
+    }
+}
+
+.winner {
+    background-repeat: no-repeat;
+    text-align: center;
+    margin: 10% auto;
+    transition: all 0.5s ease-in-out;
+    background-size: contain;
+    background-position: center;
+    height: 60%;
+    background-image: url('../assets/cards-images/win.png');
+}
+
+.loser {
+    background-repeat: no-repeat;
+    text-align: center;
+    margin: 10% auto;
+    transition: all 0.5s ease-in-out;
+    background-size: contain;
+    background-position: center;
+    height: 60%;
+    background-image: url('../assets/cards-images/lose.png');
+}
+
+.congrats {
+    position: relative;
+    top: 95%;
+    font-size: 40px;
+    color: $bg-color;
+    font-family: 'Montserrat';
+    margin: inherit;
+    padding: 0 90px;
+
+    @media (max-width: 540px) {
+        font-size: 20px;
+        top: 90%;
+    }
+}

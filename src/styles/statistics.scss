@@ -1,0 +1,52 @@
+.statistics {
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: 25px;
+  right: 20px;
+  background-color: $menu-color;
+  cursor: pointer;
+  
+  &:hover {
+    box-shadow: 0px 0px 28px 5px $menu-color;
+  }
+
+  & > .fas {
+    color: $white;
+    font-size: 20px;
+  }
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  background-color: rgba(255, 154, 118, 0.3);
+
+  @media (max-width: 540px) {
+    display: table-row;
+  }
+
+  @media (min-width: 1280px) {
+    margin-bottom: 100px;
+  }
+  
+  & ~ .footer_container {
+    position: relative;
+  }
+}
+
+thead {
+  background-color: $menu-color;
+}
+
+tr {
+  height: 35px;
+  
+  &.word-line:hover {
+    background-color: $color2;
+  }
+}
